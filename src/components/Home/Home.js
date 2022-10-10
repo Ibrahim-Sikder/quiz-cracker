@@ -13,7 +13,15 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-           
+            {
+                quizes.data.map( quiz=> 
+                
+                <Quizs
+                key={quiz.id}
+                quiz={quiz}
+                
+                ></Quizs>)
+            }
            </div>
     );
 };
