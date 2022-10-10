@@ -7,11 +7,11 @@ const Header = () => {
             <div className="quizTitle">
                 <Link clasName="">Happy Quizzing ! </Link>
             </div>
-            <div className="navbar">
-            <Link to='home'>Home </Link>
-            <Link to='topics'>Topics </Link>
-            <Link to='static'>Statistics </Link>
-            <Link to='blog'>Blog </Link>
+                <div className="navbar">
+                <Link to='home'>Home </Link>
+                <Link to='topics'>Topics </Link>
+                <Link to='static'>Statistics </Link>
+                <Link to='blog'>Blog </Link>
             </div>
         </div>
     );
