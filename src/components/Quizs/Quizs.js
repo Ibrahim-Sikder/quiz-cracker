@@ -1,19 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Quizs.css';
 const Quizs = ({quiz}) => {
    
     const {name, id, logo, total} = quiz
-    console.log(quiz)
+    
     return (
             <div>
                   <div className="container">
                   <div className="row">
                     <div className="col-md-3">
                         <div className="quizPractice">
-                             <img src={logo} alt="logo" />
+                             <img className='bg-dark' src={logo} alt="logo" />
                             <div className="">
                             <h2>{name}</h2>
-                            <button className="btn btn-danger">Start practice</button>
+                           <Link to={`https://openapi.programming-hero.com/api/quiz/${id}`}>  <button className="btn btn-danger">Start practice</button></Link>
                             </div>
                             <p>{total}</p>
                         </div>

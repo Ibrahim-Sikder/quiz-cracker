@@ -9,7 +9,7 @@ import Quizs from '../Quizs/Quizs';
 
 const Home = () => {
     const quizes = useLoaderData()
-   console.log(quizes)
+   
     return (
         <div>
             <Banner></Banner>
