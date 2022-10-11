@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './layout/Main';
@@ -16,7 +16,7 @@ function App() {
       element: <Main></Main>,
       children: [
         {
-          path: '/home',
+          path: '/',
           loader: () =>{
             return fetch('https://openapi.programming-hero.com/api/quiz')
           },
@@ -39,8 +39,8 @@ function App() {
         element: <About></About>
        },
        {
-        path: '/home/:homeId',
-        loader: ({params}) =>{
+        path: '/Quizs/:homeId',
+        loader: async ({params}) =>{
           return fetch(`https://openapi.programming-hero.com/api/quiz/${params.homeId}`)
         },
         element: <QuizsDetails></QuizsDetails>

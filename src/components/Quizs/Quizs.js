@@ -14,7 +14,7 @@ const Quizs = ({quiz}) => {
                              <img className='bg-dark' src={logo} alt="logo" />
                             <div className="">
                             <h2>{name}</h2>
-                           <Link to={`https://openapi.programming-hero.com/api/quiz/${id}`}>  <button className="btn btn-danger">Start practice</button></Link>
+                           <Link to={`Quizs/${id}`}>  <button className="btn btn-danger">Start practice</button></Link>
                             </div>
                             <p>{total}</p>
                         </div>

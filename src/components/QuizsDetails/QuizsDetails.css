@@ -1,0 +1,24 @@
+.question{
+    display:flex;
+   align-items:center;
+   justify-content:center;
+    font-size:18px;
+    margin:0 auto;
+    margin-top:20px;
+}
+.leftQuestion{
+    margin-left:10px !important;
+    border:1px solid salmon;
+    padding:15px;
+    text-transform:capitalize;
+    font-size:20px;
+    width:300px;
+}
+.rightQuestion{
+    margin-left:10px !important;
+    border:1px solid salmon;
+    padding:15px;
+    text-transform:capitalize;
+    font-size:20px;
+    width:300px;
+}
