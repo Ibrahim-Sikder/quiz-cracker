@@ -18,8 +18,10 @@ const Header = () => {
            
         </div>
          <div>
-                <h2>Welcome to my website </h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor cupiditate esse asperiores praesentium officia explicabo earum iure? Ut, assumenda ipsa adipisci voluptatibus illum similique necessitatibus labore quisquam sequi dolorum rerum harum molestiae, officiis quaerat soluta! Dolore commodi reiciendis doloremque perspiciatis culpa! Magni rerum numquam corrupti natus sit architecto voluptas perferendis.</p>
+                <h2 className='mt-5 pt-5'>Welcome To My React  Website !!</h2>
+               <strong>
+                I huge love codding !!
+               </strong>
             </div>
         </div>
     );

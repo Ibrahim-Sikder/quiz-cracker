@@ -1,6 +1,9 @@
+# Happy Quizzing !!
+# Live website link : 
 
-
-
+1.React router use.
+2.Rechart use.
+3.Toast, React bootstrap, HeroIcons etc.
 
 
 

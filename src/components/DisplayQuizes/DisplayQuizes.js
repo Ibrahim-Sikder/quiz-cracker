@@ -10,9 +10,9 @@ const DisplayQuizes = ({qui}) => {
      const { question, options, correctAnswer, name } = qui 
      const  handleAns  = (correct) =>{
         if(correct === correctAnswer){
-            toast.success('Right answer.')
+            toast.success('Good !! Your answer is correct.')
         }else{
-            toast.warning('Wrong answer.')
+            toast.warning('Opps !! You answer is incorrect')
         }
      }
    

@@ -3,7 +3,7 @@
     
 }
 .quizsAnsower{
-    border:1px solid red;
+    border:1px solid #7f8fa6;
     width:800px;
     margin:0 auto;
     padding:20px;
@@ -25,7 +25,7 @@
 .showCorrectAnswer{
     width:500px;
     margin:0 auto;
-    background:red;
+    background:#273c75;
     color:white;
     padding:20px;
     text-transform: capitalize;
