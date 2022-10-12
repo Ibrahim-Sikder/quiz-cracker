@@ -2,8 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Banner from '../Banner/Banner';
 import Quizs from '../Quizs/Quizs';
-
-
+import './Home.css'
 
 
 
@@ -13,6 +12,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <dir className='divContainer'>
             {
                 quizes.data.map( quiz=> 
                 
@@ -22,6 +22,7 @@ const Home = () => {
                 
                 ></Quizs>)
             }
+            </dir>
            </div>
     );
 };

@@ -3,7 +3,8 @@ import { Link  } from "react-router-dom";
 import './Header.css'
 const Header = () => {
     return (
-        <div className='header-container  shadow flex align-items-center p-2'>
+        <div>
+            <div className='header-container  shadow flex align-items-center p-2'>
             <div className="quizTitle">
                 <Link>Happy Quizzing ! </Link>
             </div>
@@ -13,6 +14,12 @@ const Header = () => {
                 <Link to='static'>Statistics </Link>
                 <Link to='blog'>Blog </Link>
                 <Link to='about'>About </Link>
+            </div>
+           
+        </div>
+         <div>
+                <h2>Welcome to my website </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor cupiditate esse asperiores praesentium officia explicabo earum iure? Ut, assumenda ipsa adipisci voluptatibus illum similique necessitatibus labore quisquam sequi dolorum rerum harum molestiae, officiis quaerat soluta! Dolore commodi reiciendis doloremque perspiciatis culpa! Magni rerum numquam corrupti natus sit architecto voluptas perferendis.</p>
             </div>
         </div>
     );

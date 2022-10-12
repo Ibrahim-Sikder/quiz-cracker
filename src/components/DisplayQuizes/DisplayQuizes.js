@@ -1,10 +1,47 @@
-import React from 'react';
+import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
+import React, { useState } from 'react';
+import { toast } from 'react-toastify';
+import Answer from '../Answer/Answer';
+import './DisplayQuizes.css';
 
-const DisplayQuizes = () => {
+const DisplayQuizes = ({qui}) => {
+    const [open, setOpen] = useState(true)
+
+     const { question, options, correctAnswer, name } = qui 
+     const  handleAns  = (correct) =>{
+        if(correct === correctAnswer){
+            toast.success('Right answer.')
+        }else{
+            toast.warning('Wrong answer.')
+        }
+     }
    
     return (
-        <div>
-            
+        <div className='quizsAnsower'>
+            <h1> Quizs name : {qui.name} </h1>
+            <div className="showAnswerDiv">
+                
+            <h2> {question}</h2>
+
+            <div onClick={() => setOpen(!open)} className='correctAnsoIcon'>
+                {open ? <EyeIcon></EyeIcon> : <EyeSlashIcon></EyeSlashIcon>}
+            </div>
+                        </div>
+            <div className={open ? 'hidden' : 'block'}>
+
+                <h1 className='showCorrectAnswer'>
+                    <span > </span>
+                    {correctAnswer}
+                </h1>
+            </div>
+            {
+                options.map((option, idx) => 
+                <Answer
+                key={idx}
+                option={option}
+                handleAns={handleAns}
+                ></Answer>)
+            }
         </div>
     );
 };
