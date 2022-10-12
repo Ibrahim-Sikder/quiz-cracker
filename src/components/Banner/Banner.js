@@ -22,7 +22,7 @@ const Banner = () => {
                     crack at it. I understand the html/css and some of the javascript code
                    
                     </p>
-                    <button className="btn btn-primary">Happy Quizzing</button>
+                    <button className="btn baannerBtn">Happy Quizzing</button>
                 </div>
      
             </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import './Statics.css';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
+
 const Static = () => {
 
     const data = [
@@ -63,7 +65,15 @@ const Static = () => {
           <Bar dataKey="pv" stackId="a" fill="#8884d8" />
           <Bar dataKey="uv" stackId="a" fill="#82ca9d" />
             </BarChart>
+
+      {/* Areachart */}
+
+      
         </div>
+
+        
+        
+        
     );
 };
 

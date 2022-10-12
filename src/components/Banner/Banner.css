@@ -4,5 +4,18 @@
 }
 .bannerTitle{
     text-align:left;
-    
+    border:1px solid #9CFF2E;
+    padding:30px;
+    margin-bottom:20px;
+}
+.baannerBtn{
+    background:#38E54D;
+    color:white;
+    padding:10px 20px;
+    border:1px solid white;
+}
+.baannerBtn:hover{
+    background:white;
+    color:#38E54D;
+    border:1px solid white;
 }

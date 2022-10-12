@@ -1,16 +1,33 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import './QuizsDetails.css';
-import { EyeIcon } from '@heroicons/react/24/solid'
+import { EyeIcon } from '@heroicons/react/24/solid';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const QuizsDetails = () => {
     const quizes = useLoaderData()
     
     console.log(quizes)
+
+    const toastify = () =>{
+        toast.success('I am a toast !', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
+    }
+
+
     return (
         <div>
-           <div className="QuizsRap shadow">
+           <div className="QuizsRap shadow mt-5 pt-5">
             <div className="questionDetails">
-            <h2>Quize of {quizes.data.name} </h2>
+            <h1>Quize of {quizes.data.name} </h1>
             <h5>Quize : 1 </h5>
             <h3 className="mt-5 pb-3"><span>{quizes.data.questions[0].question}</span></h3>
                 <div className="question">
@@ -30,16 +47,17 @@ const QuizsDetails = () => {
                     </div>
                 </div>
             </div>
-            <div className="eyeIcons">
-                <EyeIcon></EyeIcon>
+            <div  className="eyeIcons">
+                <EyeIcon onClick={toastify} ></EyeIcon>
             </div>
+            <ToastContainer />
             
            </div>
             {/* Second question */}
             <div className="QuizsRap shadow">
             <div className="questionDetails">
-            <h2>Quize of {quizes.data.name} </h2>
-            <h5>Quize : 1 </h5>
+            
+            <h5>Quize : 2 </h5>
             <h3 className="mt-5 pb-3"><span>{quizes.data.questions[1].question}</span></h3>
                 <div className="question">
                     <div className='leftQuestion'>
@@ -68,8 +86,8 @@ const QuizsDetails = () => {
 
             <div className="QuizsRap shadow">
             <div className="questionDetails">
-            <h2>Quize of {quizes.data.name} </h2>
-            <h5>Quize : 1 </h5>
+            
+            <h5>Quize :3 </h5>
             <h3 className="mt-5 pb-3"><span>{quizes.data.questions[2].question}</span></h3>
                 <div className="question">
                     <div className='leftQuestion'>
@@ -97,8 +115,8 @@ const QuizsDetails = () => {
 
             <div className="QuizsRap shadow">
             <div className="questionDetails">
-            <h2>Quize of {quizes.data.name} </h2>
-            <h5>Quize : 1 </h5>
+            
+            <h5>Quize : 4 </h5>
             <h3 className="mt-5 pb-3"><span>{quizes.data.questions[3].question}</span></h3>
                 <div className="question">
                     <div className='leftQuestion'>
@@ -125,8 +143,8 @@ const QuizsDetails = () => {
             {/* Five questions */}
             <div className="QuizsRap shadow">
             <div className="questionDetails">
-            <h2>Quize of {quizes.data.name} </h2>
-            <h5>Quize : 1 </h5>
+            
+            <h5>Quize : 5</h5>
             <h3 className="mt-5 pb-3"><span>{quizes.data.questions[4].question}</span></h3>
                 <div className="question">
                     <div className='leftQuestion'>
@@ -154,8 +172,8 @@ const QuizsDetails = () => {
 
             <div className="QuizsRap shadow">
             <div className="questionDetails">
-            <h2>Quize of {quizes.data.name} </h2>
-            <h5>Quize : 1 </h5>
+            
+            <h5>Quize : 6 </h5>
             <h3 className="mt-5 pb-3"><span>{quizes.data.questions[0].question}</span></h3>
                 <div className="question">
                     <div className='leftQuestion'>

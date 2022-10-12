@@ -1,19 +1,32 @@
 .header-container{
     display:flex;
     justify-content: space-between;
+    background:#2192FF;
+    padding-left:50px;
 }
 .quizTitle a{
     text-decoration:none;
-    font-size:25px;
-    color:cornflowerblue;
+    font-size:28px;
+    color:white;
     font-weight:bold;
     
 }
 .navbar a{
     text-decoration:none;
     margin-right:10px;
-    color:black;
+    color:white;
     font-size:20px;
     font-weight:bold;
 
+}
+
+
+@media only screen and (max-width:768px){
+    .header-container{
+        display:block;
+       
+    }
+    .navbar a{
+        margin-right:5px !important;
+    }
 }

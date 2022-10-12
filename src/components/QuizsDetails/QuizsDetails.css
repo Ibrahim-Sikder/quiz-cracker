@@ -28,6 +28,7 @@
     padding:30px;
     border-radius:10px;
     position:relative;
+    
 }
 .eyeIcons{
     font-size:30px !important;
@@ -35,4 +36,19 @@
     position:absolute;
     top:0;
     right:30px;
+}
+
+@media only screen and (max-width:992px){
+    .QuizsRap{
+        width:550px;
+        
+    }
+
+}
+@media only screen and (max-width:768px){
+    .QuizsRap{
+        width:450px;
+        
+    }
+
 }

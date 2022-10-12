@@ -7,9 +7,8 @@ const Quizs = ({quiz}) => {
     
     return (
             <div>
-                  <div className="container">
-                  <div className="row">
-                    <div className="col-md-3">
+                  <div className="container mt-5 pt-5 ">
+                  
                         <div className="quizPractice">
                              <img className='bg-dark' src={logo} alt="logo" />
                             <div className="">
@@ -19,8 +18,7 @@ const Quizs = ({quiz}) => {
                             <p>{total}</p>
                         </div>
                     </div>
-                </div>
-              </div>
+               
             
             
         </div>
