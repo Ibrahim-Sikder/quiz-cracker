@@ -3,7 +3,7 @@ import { Link  } from "react-router-dom";
 import './Header.css'
 const Header = () => {
     return (
-        <div className='header-container container shadow flex align-items-center p-2'>
+        <div className='header-container  shadow flex align-items-center p-2'>
             <div className="quizTitle">
                 <Link>Happy Quizzing ! </Link>
             </div>

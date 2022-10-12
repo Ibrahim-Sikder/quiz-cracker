@@ -22,3 +22,17 @@
     font-size:20px;
     width:300px;
 }
+.QuizsRap{
+    width:600px;
+    margin:0 auto;
+    padding:30px;
+    border-radius:10px;
+    position:relative;
+}
+.eyeIcons{
+    font-size:30px !important;
+    width:30px;
+    position:absolute;
+    top:0;
+    right:30px;
+}
